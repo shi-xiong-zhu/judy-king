@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>for循环 | H5</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="全网最细">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.37283b8f.js" as="script"><link rel="preload" href="/assets/js/2.3c2e6582.js" as="script"><link rel="preload" href="/assets/js/14.53f32848.js" as="script"><link rel="prefetch" href="/assets/js/10.8288376e.js"><link rel="prefetch" href="/assets/js/11.ed84cad9.js"><link rel="prefetch" href="/assets/js/12.f30e8f53.js"><link rel="prefetch" href="/assets/js/13.f4b98989.js"><link rel="prefetch" href="/assets/js/15.da533d2b.js"><link rel="prefetch" href="/assets/js/3.ef691f14.js"><link rel="prefetch" href="/assets/js/4.da8b72e6.js"><link rel="prefetch" href="/assets/js/5.048c6337.js"><link rel="prefetch" href="/assets/js/6.29f38f88.js"><link rel="prefetch" href="/assets/js/7.cafa4535.js"><link rel="prefetch" href="/assets/js/8.f210631e.js"><link rel="prefetch" href="/assets/js/9.1036267a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="H5" class="logo"> <span class="site-name can-hide">H5</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/view/html/" class="nav-link">
+  HTML
+</a></div><div class="nav-item"><a href="/view/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/view/javaScript/" class="nav-link router-link-active">
+  JS
+</a></div><div class="nav-item"><a href="/view/vue/" class="nav-link">
+  vue
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/view/html/" class="nav-link">
+  HTML
+</a></div><div class="nav-item"><a href="/view/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/view/javaScript/" class="nav-link router-link-active">
+  JS
+</a></div><div class="nav-item"><a href="/view/vue/" class="nav-link">
+  vue
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/view/javaScript/" aria-current="page" class="sidebar-link">原型链</a></li><li><a href="/view/javaScript/one.html" class="sidebar-link">instansof</a></li><li><a href="/view/javaScript/two.html" aria-current="page" class="active sidebar-link">for循环</a></li><li><a href="/view/javaScript/three.html" class="sidebar-link">水平制表符</a></li><li><a href="/view/javaScript/four.html" class="sidebar-link">预处理</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="for循环"><a href="#for循环" class="header-anchor">#</a> for循环</h1> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 篮球从5米的地方掉下来，每次弹起的高度是原来的30%，经过几次弹起高度不足0.1米</span>
+        <span class="token keyword">var</span> time <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> i <span class="token operator">&gt;</span> <span class="token number">0.1</span><span class="token punctuation">;</span> i <span class="token operator">*=</span> <span class="token number">0.3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            time<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// </span>
+        <span class="token keyword">var</span> time <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span> i <span class="token operator">&gt;</span> <span class="token number">0.1</span><span class="token punctuation">;</span> time<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            i <span class="token operator">*=</span> <span class="token number">0.3</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>for循环</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span> <span class="token punctuation">(</span>语句 <span class="token number">1</span><span class="token punctuation">;</span> 语句 <span class="token number">2</span><span class="token punctuation">;</span> 语句 <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     要执行的代码块
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><ol><li>语句 1 在循环（代码块）开始之前执行。</li> <li>语句 2 定义运行循环（代码块）的条件。</li> <li>语句 3 会在循环（代码块）每次被执行后执行。</li></ol></blockquote> <ul><li>要执行的代码块可以和语句3换书写位置</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/view/javaScript/one.html" class="prev">
+        instansof
+      </a></span> <span class="next"><a href="/view/javaScript/three.html">
+        水平制表符
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.37283b8f.js" defer></script><script src="/assets/js/2.3c2e6582.js" defer></script><script src="/assets/js/14.53f32848.js" defer></script>
+  </body>
+</html>
